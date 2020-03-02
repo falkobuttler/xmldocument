@@ -11,7 +11,10 @@ Pod::Spec.new do |s|
   s.license      = 'MIT License'
   s.author       = { "Nick Farina" => "nfarina@gmail.com" }
   s.source       = { :git => "https://github.com/nfarina/xmldocument.git", :tag => s.version.to_s }
-  s.platform     = :ios, '7.0'
+  s.osx.deployment_target = '10.8'
+  s.ios.deployment_target = '7.0'
+  s.tvos.deployment_target = '9.0'
+  s.watchos.deployment_target = '2.0'
   s.source_files = 'SMXMLDocument.{h,m}'
   s.requires_arc = true
 end
